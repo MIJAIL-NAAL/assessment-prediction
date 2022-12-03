@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction percentage</title>
+</head>
+<body>
+<h1> Predicted percentage based on study hours</h1>
+<form action="{{url_for('predict')}}" method="POST">
+    <input type="text" name="Hours" placeholder="Hours" required="required">
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+{{ prediction_text}}
+</body>
+</html>

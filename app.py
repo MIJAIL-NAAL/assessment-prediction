@@ -1,11 +1,10 @@
-import flask
 from flask import Flask, render_template, request
 import pickle
 
 # Running the flask app
 app = Flask(__name__)
 
-#load model using pickle
+# load model using pickle
 model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/', methods=['GET'])
